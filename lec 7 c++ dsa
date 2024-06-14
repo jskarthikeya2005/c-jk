@@ -127,6 +127,31 @@ cout<<answer;
        
        m=m>>1;
    }
+
+
+//code for power of two question
+int n,i=0;
+    cin>>n;
+    while(n!=0){
+        if(n%2==0){
+            n=n/2;
+            if(n == 1){
+                break;
+            }
+        } 
+        else {
+        cout<<"false";
+        i++;
+        break;
+        }
+    }
+    if(i == 0){
+        cout<<"true";
+    }
+
+
+
+
    answer=(~n)&mask;
    cout<<answer;
     */
