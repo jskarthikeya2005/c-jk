@@ -71,3 +71,18 @@ int main(){
     int sol= nCr(n,r);
     cout<<sol;
 }
+//print counting program
+#include<iostream>
+#include<math.h>
+using namespace std;
+void printCounting(int n){
+    for(int i=1;i<=n;i++){
+        cout<<i<<endl;
+    }
+}
+int main(){
+    int k;
+    cin>>k;
+    printCounting(k);
+    
+}
