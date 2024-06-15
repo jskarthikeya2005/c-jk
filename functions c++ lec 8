@@ -108,3 +108,17 @@ int main(){
     else
     cout<<"not prime";
 }
+//hw questions
+#include<iostream>
+#include<math.h>
+using namespace std;
+int AP(int n){
+   int ap=3*n + 7;
+    return ap;
+}
+int main(){
+    int number;
+    cin>>number;
+   cout<< AP(number);
+    
+}
