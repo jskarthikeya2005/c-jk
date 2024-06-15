@@ -86,3 +86,25 @@ int main(){
     printCounting(k);
     
 }
+// prime number checker using functions
+#include<iostream>
+#include<math.h>
+using namespace std;
+bool primeNumber(int n){
+    
+    for(int i=2;i<n;i++){
+        if(n%i==0)
+            return 0;
+    }
+    return 1;
+}
+int main(){
+    int k,res;
+    cin>>k;
+    res= primeNumber(k);
+    if(res){
+        cout<<"is prime";
+    }
+    else
+    cout<<"not prime";
+}
