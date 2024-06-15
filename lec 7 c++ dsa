@@ -155,3 +155,33 @@ int n,i=0;
    answer=(~n)&mask;
    cout<<answer;
     */
+
+
+int amt,i,n100,n50,n20,n1,notes;
+    cout<<"enter amount ";
+    cin>>amt;
+    cout<<"to get amount into denominations of 100,20,1, press 1"<<endl;
+    cin>>notes;
+    switch(notes) {
+        
+        case 1: {
+                n100=amt/100;
+                cout<<"no of 100 rupee notes = "<<n100<<endl;
+                amt= amt - n100*100;
+        }
+        
+        case 20: {
+            n20=amt/20;
+            cout<<"no of 20 rupee notes = "<<n20<<endl;
+            amt = amt - n20*20;
+        }
+        
+        case 3: {
+            n1=amt/1;
+            cout<<"no of 1 rupee notes = "<<n1<<endl;
+            amt = amt - n1;
+        } break;
+        
+        default: cout<<"please enter 1 to get the required output";
+        
+    }
