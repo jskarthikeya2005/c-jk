@@ -48,3 +48,26 @@ int main(){
         cout<<"is odd";
     }
 }
+//code for nCr
+#include <iostream>
+using namespace std;
+
+int fact(int n){
+    int ans=1;
+    while(n!=0){
+        ans=ans*n;
+        n=n-1;
+    }
+    return ans;
+}
+int nCr(int n,int r){
+    int num= fact(n);
+    int denom= fact(r)*fact(n-r);
+    return num/denom;
+}
+int main(){
+    int n,r;
+    cin>>n>>r;
+    int sol= nCr(n,r);
+    cout<<sol;
+}
