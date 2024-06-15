@@ -1,5 +1,6 @@
 //learning functions in c++
 // Online C++ compiler to run C++ program online
+//method 1
 #include <iostream>
 using namespace std;
 int power(int a,int b){
@@ -16,4 +17,11 @@ int main() {
     int answer=power(base,exponent);
     cout<<answer;
     return 0;
+}
+//method 2
+int power(int a,int b){
+    int ans=1;
+    for(int i=1;i<=b;i++)
+        ans=ans*a;
+        return ans;
 }
