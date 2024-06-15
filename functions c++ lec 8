@@ -122,3 +122,23 @@ int main(){
    cout<< AP(number);
     
 }
+
+int fibonacci(int n){
+    int next,a=0,b=1;
+    //0,1,1,2,3,5,8,13,21....
+    for(int i=1;i<n;i++){
+        next = a+ b;
+        
+        a = b;
+        b = next;
+    }
+    return a;
+}
+
+int main(){
+    int number,result;
+    cin>> number;
+    result = fibonacci(number);
+    cout<<result;
+    
+}
