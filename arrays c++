@@ -94,7 +94,40 @@ int main(){
     cout<<search(array,size,key);
 }
 
-
+//reversing the arrays
+#include <iostream>
+#include <climits>
+using namespace std;
+int main(){
+    //reversing contents of array
+   /* int arr[4]={14,143,69,420};
+    int revarr[4];
+    
+    for(int i=0;i<4;i++){
+        revarr[4-1-i]=arr[i];
+    }
+    
+    for(int j=0;j<4;j++){
+        cout<<revarr[j]<<" ";
+    }*/
+    int size;
+    int arr[size];
+    int revarr[size];
+    
+    cin>>size;
+    //taking values into array
+    for(int i=0;i<size;i++){
+        cin>>arr[i];
+    }
+    
+    for(int j=0;j<size;j++){
+        revarr[size-1-j]=arr[j];
+    }
+    
+    for(int k=0;k<size;k++){
+        cout<<revarr[k]<<" ";
+    }
+}
 
 
 
