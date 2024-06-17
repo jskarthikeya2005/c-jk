@@ -28,6 +28,8 @@ int maxArray(int array[],int n){
         if(array[i]>max){
             max=array[i];
         }
+//alternate way to find max of an array
+       // maxi = max(maxi,array[i]);
     }
     return max;
 }
