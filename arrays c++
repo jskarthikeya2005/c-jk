@@ -176,3 +176,22 @@ int main(){
     swapAlt(array,6);
     printArray(array,6);
 }
+//find unique array:
+xor with elements to cancel elements and find unique element
+#include <iostream>
+using namespace std; 
+int main() {
+    // Write C++ code here
+    int ans=0,arr[100];
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++){
+        ans=ans^arr[i];
+    }
+    cout <<ans;
+//0^a = a; a^a=0. by this method we can cancel same numbers
+    return 0;
+}
