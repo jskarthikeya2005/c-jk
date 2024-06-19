@@ -195,3 +195,32 @@ int main() {
 //0^a = a; a^a=0. by this method we can cancel same numbers
     return 0;
 }
+//another method, same question
+#include <iostream>
+using namespace std; 
+int main() {
+    // Write C++ code here
+    int n;
+    int arr[5];
+    int count[100]={0};
+    //findUnique
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            if(arr[i]== arr[j] && i!=j){
+                count[i]=arr[i];
+                count[j]=arr[j];
+            }
+        }
+    }
+    
+    for(int i=0;i<n;i++){
+        if(count[i]!=arr[i]){
+            cout<<arr[i]<<endl;
+        }
+    }
+}
