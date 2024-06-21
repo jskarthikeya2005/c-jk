@@ -312,6 +312,35 @@ int main() {
         }
     }
     */
-    
-    
+}
+//find duplicate, with 0(n) time complexity
+#include <iostream>
+using namespace std; 
+int main() {
+    int arr[100],n,sol[100],m=1;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    //time complexity 0(n)
+    for(int i=0;i<n;i++){
+        
+        
+            if(arr[i]==arr[i+m]){
+                sol[i]=arr[i];
+            }
+            if(i+m<n-1){
+                i--;
+            }
+            if(i+m==n-1){
+                m=0;
+            }
+            m++;
+    }
+    for(int i=0;i<n;i++){
+        if(sol[i]==0){
+            continue;
+        }
+        cout<<sol[i]<<endl;
+    }
 }
