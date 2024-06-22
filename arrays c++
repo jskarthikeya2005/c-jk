@@ -400,3 +400,27 @@ int main() {
         }
     }
 }
+// two sum
+#include <iostream>
+using namespace std;
+int main() {
+    // Two sum
+    int n,arr[100];
+    cin>>n;
+    for(int i=0;i<n;i++){
+    cin>>arr[i];
+    }
+    int num;
+    cin>>num;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==num){
+                if(arr[i]<arr[j])
+                    cout<<arr[i]<<" "<<arr[j]<<endl;
+                else
+                    cout<<arr[j]<<" "<<arr[i]<<endl;
+            }
+        }
+    }
+    return 0;
+}
